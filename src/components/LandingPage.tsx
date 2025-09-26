@@ -181,7 +181,7 @@ export default function LandingPage({ onAuthSuccess }: LandingPageProps) {
               <div className="text-blue-100">Body Systems</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-yellow-400 mb-2">1000+</div>
+              <div className="text-4xl font-bold text-yellow-400 mb-2">100+</div>
               <div className="text-blue-100">Students Learning</div>
             </div>
           </div>

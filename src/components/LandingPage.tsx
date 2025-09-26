@@ -139,9 +139,14 @@ export default function LandingPage({ onAuthSuccess }: LandingPageProps) {
               <Play className="w-5 h-5 group-hover:rotate-12 transition-transform" />
               <span>Start Your Adventure</span>
             </button>
-            <button className="bg-white bg-opacity-20 backdrop-blur-sm text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-30 transition-all duration-200 border border-white border-opacity-30">
+            <a 
+              href="https://drive.google.com/file/d/1BfP8yjFTlFW12xd07xTDff34N4lkErCh/view?usp=sharing" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white bg-opacity-20 backdrop-blur-sm text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-opacity-30 transition-all duration-200 border border-white border-opacity-30 inline-block"
+            >
               Watch Demo
-            </button>
+            </a>
           </div>
 
           {/* Features Grid */}

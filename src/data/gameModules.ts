@@ -1,0 +1,186 @@
+import { GameModule, Category } from '../types';
+
+export const categories: Category[] = [
+  {
+    id: 'circulatory',
+    name: 'Circulatory System',
+    description: 'Explore the heart, blood vessels, and circulation',
+    icon: 'Heart',
+    color: 'bg-red-500',
+    order: 1,
+  },
+  {
+    id: 'respiratory',
+    name: 'Respiratory System',
+    description: 'Discover how we breathe and process oxygen',
+    icon: 'Wind',
+    color: 'bg-blue-500',
+    order: 2,
+  },
+  {
+    id: 'digestive',
+    name: 'Digestive System',
+    description: 'Learn about nutrition and digestion',
+    icon: 'Apple',
+    color: 'bg-green-500',
+    order: 3,
+  },
+  {
+    id: 'nervous',
+    name: 'Nervous System',
+    description: 'Understand the brain and nervous system',
+    icon: 'Brain',
+    color: 'bg-purple-500',
+    order: 4,
+  },
+  {
+    id: 'muscular',
+    name: 'Muscular System',
+    description: 'Discover how muscles work and move',
+    icon: 'Zap',
+    color: 'bg-orange-500',
+    order: 5,
+  },
+  {
+    id: 'skeletal',
+    name: 'Skeletal System',
+    description: 'Learn about bones and joints',
+    icon: 'Bone',
+    color: 'bg-gray-600',
+    order: 6,
+  },
+];
+
+export const gameModules: GameModule[] = [
+  // Circulatory System
+  {
+    id: 'heart-pump-adventure',
+    title: 'Heart Pump Adventure',
+    description: 'Journey through the heart chambers and learn how blood flows',
+    thumbnail: 'https://images.pexels.com/photos/433267/pexels-photo-433267.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'circulatory',
+    difficulty: 'beginner',
+    estimated_time: 15,
+    learning_objectives: ['Understand heart anatomy', 'Learn about blood circulation'],
+  },
+  {
+    id: 'blood-vessel-race',
+    title: 'Blood Vessel Race',
+    description: 'Race through arteries and veins to deliver oxygen',
+    thumbnail: 'https://images.pexels.com/photos/3844581/pexels-photo-3844581.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'circulatory',
+    difficulty: 'intermediate',
+    estimated_time: 20,
+    learning_objectives: ['Distinguish arteries from veins', 'Understand blood pressure'],
+  },
+
+  // Respiratory System
+  {
+    id: 'lung-explorer',
+    title: 'Lung Explorer',
+    description: 'Explore the lungs and discover how oxygen enters the body',
+    thumbnail: 'https://images.pexels.com/photos/7195761/pexels-photo-7195761.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'respiratory',
+    difficulty: 'beginner',
+    estimated_time: 18,
+    learning_objectives: ['Learn lung anatomy', 'Understand gas exchange'],
+  },
+  {
+    id: 'breathing-simulator',
+    title: 'Breathing Simulator',
+    description: 'Control breathing patterns and see how it affects the body',
+    thumbnail: 'https://images.pexels.com/photos/3771115/pexels-photo-3771115.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'respiratory',
+    difficulty: 'intermediate',
+    estimated_time: 25,
+    learning_objectives: ['Master breathing techniques', 'Understand respiratory disorders'],
+  },
+
+  // Digestive System
+  {
+    id: 'digestive-journey',
+    title: 'Digestive Journey',
+    description: 'Follow food through the digestive system',
+    thumbnail: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'digestive',
+    difficulty: 'beginner',
+    estimated_time: 22,
+    learning_objectives: ['Track food digestion', 'Learn about enzymes'],
+  },
+  {
+    id: 'nutrition-detective',
+    title: 'Nutrition Detective',
+    description: 'Solve nutrition mysteries and create balanced meals',
+    thumbnail: 'https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'digestive',
+    difficulty: 'intermediate',
+    estimated_time: 30,
+    learning_objectives: ['Understand macronutrients', 'Plan healthy diets'],
+  },
+
+  // Nervous System
+  {
+    id: 'neuron-network',
+    title: 'Neuron Network',
+    description: 'Build neural pathways and understand how signals travel',
+    thumbnail: 'https://images.pexels.com/photos/3825529/pexels-photo-3825529.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'nervous',
+    difficulty: 'intermediate',
+    estimated_time: 28,
+    learning_objectives: ['Understand neurons', 'Learn signal transmission'],
+  },
+  {
+    id: 'reflex-challenge',
+    title: 'Reflex Challenge',
+    description: 'Test and improve your reflexes while learning about the nervous system',
+    thumbnail: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'nervous',
+    difficulty: 'beginner',
+    estimated_time: 15,
+    learning_objectives: ['Understand reflexes', 'Learn reaction times'],
+  },
+
+  // Muscular System
+  {
+    id: 'muscle-builder',
+    title: 'Muscle Builder',
+    description: 'Learn about different muscle types and how they work',
+    thumbnail: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'muscular',
+    difficulty: 'beginner',
+    estimated_time: 20,
+    learning_objectives: ['Identify muscle types', 'Understand muscle contraction'],
+  },
+  {
+    id: 'movement-mechanics',
+    title: 'Movement Mechanics',
+    description: 'Discover how muscles and bones work together for movement',
+    thumbnail: 'https://images.pexels.com/photos/136404/pexels-photo-136404.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'muscular',
+    difficulty: 'intermediate',
+    estimated_time: 25,
+    learning_objectives: ['Learn biomechanics', 'Understand joint movement'],
+  },
+
+  // Skeletal System
+  {
+    id: 'bone-detective',
+    title: 'Bone Detective',
+    description: 'Investigate bone structure and learn about the skeleton',
+    thumbnail: 'https://images.pexels.com/photos/3825539/pexels-photo-3825539.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'skeletal',
+    difficulty: 'beginner',
+    estimated_time: 18,
+    learning_objectives: ['Understand bone anatomy', 'Learn about bone growth'],
+  },
+  {
+    id: 'joint-explorer',
+    title: 'Joint Explorer',
+    description: 'Explore different types of joints and their functions',
+    thumbnail: 'https://images.pexels.com/photos/6812432/pexels-photo-6812432.jpeg?auto=compress&cs=tinysrgb&w=400',
+    category: 'skeletal',
+    difficulty: 'intermediate',
+    estimated_time: 23,
+    learning_objectives: ['Classify joint types', 'Understand joint movement'],
+  },
+];
